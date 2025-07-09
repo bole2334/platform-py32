@@ -1,0 +1,34 @@
+{
+    "build": {
+        "core": "py32",
+        "cpu": "cortex-m0plus",
+        "extra_flags": "-DPY32F002Axx",
+        "f_cpu": "48000000L",
+        "mcu": "PY32F002Axx",
+        "variant": "PY32F002Axx/PY32F002A_Base"
+    },
+    "frameworks": [
+        "arduino"
+    ],
+    "debug": {
+        "openocd_target": "air001xx",
+        "svd_path": "air001xx.svd"
+    },
+    "name": "PY32F002Axx",
+    "upload": {
+        "disable_flushing": false,
+        "maximum_ram_size": 4096,
+        "maximum_size": 32768,
+        "protocol": "airisp",
+        "chip": "air001",
+        "protocols": [
+            "cmsis-dap",
+            "airisp"
+        ],
+        "require_upload_port": true,
+        "use_1200bps_touch": false,
+        "wait_for_upload_port": false
+    },
+    "url": "air001.cn",
+    "vendor": "LuatOS"
+}

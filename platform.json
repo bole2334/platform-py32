@@ -1,0 +1,91 @@
+{
+  "name": "airmcu",
+  "title": "Luat AIRMCU",
+  "description": "Luat airmcu has many years of industry-leading design experience, as it has already launched a huge variety of 32bit general purpose microcontrollers, based on Arm Cortex-M and RISC-V cores. GigaDevice continues to empower various industry fields, providing high performance and rich in resources MCUs.",
+  "homepage": "https://wiki.luatos.com/",
+  "license": "Apache-2.0",
+  "keywords": [
+    "dev-platform",
+    "ARM",
+    "Cortex-M",
+    "Luat",
+    "airmcu"
+  ],
+  "engines": {
+    "platformio": "^5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bole2334/platform-py32"
+  },
+  "version": "0.0.1",
+  "frameworks": {
+    "cmsis": {
+      "package": "framework-cmsis",
+      "script": "builder/frameworks/cmsis.py",
+      "description": "The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices",
+      "homepage": "https://developer.arm.com/tools-and-software/embedded/cmsis",
+      "title": "CMSIS"
+    },
+    "arduino": {
+      "package": "framework-arduinoairmcu",
+      "script": "builder/frameworks/arduino.py",
+      "description": "Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences",
+      "homepage": "https://github.com/bole2334/platform-py32",
+      "title": "Arduino"
+    }
+  },
+  "packages": {
+    "toolchain-gccarmnoneeabi": {
+      "type": "toolchain",
+      "owner": "platformio",
+      "version": "~1.140201.0",
+      "optionalVersions": [
+        "~1.60301.0",
+        "~1.80201.0",
+        "~1.90201.0",
+        "~1.120301.0",
+        "~1.140201.0"
+      ]
+    },
+    "framework-arduinoairmcu": {
+      "type": "framework",
+      "optional": true,
+      "owner": "Air-duino",
+      "version": "https://github.com/bole2334/Arduino-AirMCU.git"
+    },
+    "framework-cmsis": {
+      "type": "framework",
+      "optional": true,
+      "owner": "platformio",
+      "version": "~2.50501.0",
+      "optionalVersions": [
+        "~2.50900.0"
+      ]
+    },
+    "tool-stm32duino": {
+      "type": "uploader",
+      "optional": true,
+      "owner": "platformio",
+      "version": "~1.0.1"
+    },
+    "tool-openocd": {
+      "type": "uploader",
+      "optional": true,
+      "owner": "platformio",
+      "version": "~3.1200.0"
+    },
+    "tool-airisp": {
+      "type": "uploader",
+      "optional": true,
+      "owner": "Air-duino",
+      "version": "https://gitee.com/bole233/tool-air-isp.git@1.2.8"
+    },
+    "tool-airisp-next": {
+      "type": "uploader",
+      "optional": false,
+      "owner": "Air-duino",
+      "version": "https://gitee.com/bole233/tool-airisp-next.git@0.2.0"
+    }
+  }
+}
