@@ -21,7 +21,7 @@ from platformio.managers.platform import PlatformBase
 
 IS_WINDOWS = sys.platform.startswith("win")
 
-class AirmcuPlatform(PlatformBase):
+class PY32Platform(PlatformBase):
 
     def configure_default_packages(self, variables, targets):
         board = variables.get("board")
@@ -33,8 +33,8 @@ class AirmcuPlatform(PlatformBase):
         frameworks = variables.get("pioframework", [])
         if "arduino" in frameworks:
                 self.packages["toolchain-gccarmnoneeabi"]["version"] = "~1.120301.0"
-                if build_core == "airmcu":
-                    self.packages["framework-arduinoairmcu"]["optional"] = False
+                if build_core == "py32":
+                    self.packages["framework-arduinopy32"]["optional"] = False
                     self.packages["framework-cmsis"]["version"] = "~2.50900.0"
                     self.packages["framework-cmsis"]["optional"] = False
 
