@@ -31,9 +31,9 @@ env = DefaultEnvironment()
 mcu = env.BoardConfig().get("build.mcu")
 core = env.BoardConfig().get("build.core", "")
 
-if core == "airmcu":
+if core == "py32":
     build_script = join(
-        env.PioPlatform().get_package_dir("framework-arduinoairmcu"),
+        env.PioPlatform().get_package_dir("framework-arduinopy32"),
         "tools", "platformio", "platformio-build.py")
 
 if not isfile(build_script):
