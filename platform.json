@@ -9,7 +9,7 @@
     "ARM",
     "Cortex-M",
     "Luat",
-    "airmcu"
+    "py32"
   ],
   "engines": {
     "platformio": "^5"
@@ -48,11 +48,11 @@
         "~1.140201.0"
       ]
     },
-    "framework-arduinoairmcu": {
+    "framework-arduinopy32": {
       "type": "framework",
       "optional": true,
       "owner": "Air-duino",
-      "version": "https://github.com/bole2334/Arduino-AirMCU.git"
+      "version": "https://github.com/bole2334/Arduino-py32.git"
     },
     "framework-cmsis": {
       "type": "framework",
