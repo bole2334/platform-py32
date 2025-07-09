@@ -52,7 +52,7 @@
       "type": "framework",
       "optional": true,
       "owner": "Air-duino",
-      "version": "https://github.com/bole2334/Arduino-PY32.git#master"
+      "version": "https://github.com/bole2334/Arduino-PY32.git#main"
     },
     "framework-cmsis": {
       "type": "framework",
