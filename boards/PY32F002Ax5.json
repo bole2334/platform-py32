@@ -2,7 +2,7 @@
     "build": {
         "core": "py32",
         "cpu": "cortex-m0plus",
-        "extra_flags": "-DPY32F002Axx",
+        "extra_flags": "-DPY32F002Ax5",
         "f_cpu": "48000000L",
         "mcu": "PY32F002Axx",
         "variant": "PY32F002Axx/PY32F002A_Base"
