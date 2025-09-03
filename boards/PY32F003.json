@@ -5,7 +5,7 @@
         "extra_flags": "-DPY32F003",
         "f_cpu": "48000000L",
         "mcu": "PY32F003xx",
-        "variant": "PY32F003/PY32F003_Base"
+        "variant": "PY32F003xx/PY32F003_Base"
     },
     "frameworks": [
         "arduino"
